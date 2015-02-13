@@ -42,6 +42,10 @@ import (
 
 var buildContext = build.Default
 
+func SetContext(context build.Context) {
+	buildContext = context
+}
+
 // matchPattern(pattern)(name) reports whether
 // name matches pattern.  Pattern is a limited glob
 // pattern in which '...' means 'any string' and there
